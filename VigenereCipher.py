@@ -16,7 +16,7 @@ class Vigenerecipher:
             ci = ci%26
             ci = chr(ci+65)
             cipher +=ci
-        return "".join(cipher)
+        return cipher
     def decrypt(self,cipherText):#Decryption method takes a cipher text and return a originaltext(plaintext) decryption(ciphertext,self.key)
         plainText = ""
         cipherText = cipherText.upper()
