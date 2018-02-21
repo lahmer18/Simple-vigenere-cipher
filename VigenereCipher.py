@@ -1,8 +1,11 @@
 #This function takes two parameters ,it helps us to fit the key with our plain text even len(key) is less than the len(plaintext)
+#Exemple1 : key = "sidahmed",num = 20 ,return = "sidahmedsidahmedsida"
+#Exemple2 : key = "blabla",num = "5", return = "blabl"
 def cover_plaintext_withKey(key, num):
-    repeats = num // len(key) + 1
-    return (key * repeats)[:num]
+    rp = num // len(key) + 1
+    return (key * rp)[:num]
 #We assume that our plaintext is composed just of UpperCaseLetters A..Z
+#If plaintext is composed from lowercase and whitespaces , return = eliminate white spaces , convert all letters to upper case
 #Zip(arg1,arg2) takes two array arg1,arg2 and return array of tuples => Return = [(arg1[0],arg2[0])....(arg1(len(arg1)-1,arg1(len(arg1)-1))]
 class Vigenerecipher:
     def __init__(self,key):
