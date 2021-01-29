@@ -32,5 +32,3 @@ class Vigenerecipher:
         return plainText
 
 
-
-
